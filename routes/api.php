@@ -6,3 +6,4 @@ use App\Http\Controllers\CreditAnalysisController;
 use App\Models\CreditAnalysis;
 
 Route::post('analise-credito', [CreditAnalysisController::class, 'analiseDeCredito']);
+Route::post('ultima-analise-credito', [CreditAnalysisController::class, 'ultimaAnaliseDeCredito']);

@@ -18,9 +18,9 @@ return new class extends Migration
             $table->string('nome', 75);
             $table->string('cpf', 14);
             $table->boolean('negativado');
-            $table->float('salario', 7, 2);
-            $table->string('limite_cartao', 7, 2);
-            $table->string('valor_aluguel', 7, 2);
+            $table->decimal('salario', 11, 2);
+            $table->decimal('limite_cartao', 11, 2);
+            $table->decimal('valor_aluguel', 11, 2);
             $table->string('rua', 120);
             $table->integer('numero');
             $table->string('municipio', 75);
