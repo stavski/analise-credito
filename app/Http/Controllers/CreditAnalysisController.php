@@ -159,13 +159,17 @@ class CreditAnalysisController extends Controller
             ->with('result')
             ->first();
 
-        $json = array(
-            'codigo' => $creditAnalysis['result']->last()['id'],
-            'pontuacao' => $creditAnalysis['result']->last()['pontuacao_final'],
-            'resultado' => $creditAnalysis['result']->last()['resultado'],
-            'data' => $creditAnalysis['result']->last()['created_at'],
-        );
+        if ($creditAnalysis) {
+            $json = array(
+                'codigo' => $creditAnalysis['result']->last()['id'],
+                'pontuacao' => $creditAnalysis['result']->last()['pontuacao_final'],
+                'resultado' => $creditAnalysis['result']->last()['resultado'],
+                'data' => $creditAnalysis['result']->last()['created_at'],
+            );
 
-        return response()->json($json, 422);
+            return response()->json($json, 422);
+        } else {
+            return response()->json(['errors' => ['analise' => ['Nenhuma análise encontrada']]], 422, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'], JSON_UNESCAPED_UNICODE);
+        }
     }
 }
