@@ -53,16 +53,16 @@ class CreditAnalysisController extends Controller
         $parametroUm   = false;
         $parametroDois = false;
 
+        
         // Caso o valor do aluguel ultrapasse 30% do salário, sua pontuação deve ser decrescida em 18%;
         $trintaPorcentoSalario = ($request->salario / 100) * 30;
-
         if ($request->valorAluguel > $trintaPorcentoSalario) {
             $pontos      -= ($pontos / 100) * 18;
             $parametroUm = true;
         }
 
         // Caso o cliente esteja com seu CPF negativado, sua pontuação deve ser decrescida em 31%.
-        if (true === $request->negativado) {
+        if ('true' == $request->negativado) {
             $pontos        -= ($pontos / 100) * 31;
             $parametroDois = true;
         }
