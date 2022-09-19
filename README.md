@@ -49,25 +49,3 @@ Ao final do processo, deverá ser retornado pelo endpoint, em formato JSON, os s
 
 ##### * O segundo endpoint deverá:
 Receber um CPF, em formato padrão (XXX.XXX.XXX-XX), e retornar o resultado da última análise de crédito realizada para o CPF informado.
-
-#### Requisitos Para Aceite:
- 1. Deverá ser construída uma API RESTful, utilizando o framework PHP Laravel em sua versão mais recente.  
- 2. Deverá ser utilizado o PHP em sua a versão mais recente, preferencialmente conteinerizado em Docker.
- 3. Deverá ser utilizado banco de dados MariaDB ou PostgreSQL.
- 4. Deverá ser utilizada alguma forma de geração de banco de dados, seja um .sql disponibilizado no Git, ou o uso das Migrations do próprio Laravel. 
- 5. O Código deverá ser disponibilizado como um repositório privado do GitHub, compartilhado com o email do solicitante do teste.
- 6. O arquivo README.md deverá conter os passos necessários para rodar o projeto em outras máquinas.
-
-#### Requisitos Opcionais: 
-Os requisitos a seguir são opcionais, as suas realizações não são obrigatórias, mas contam como pontos positivos na avaliação.
- * 100% de cobertura com testes unitários
- * Documentação em Swagger
- * Documentação em formato de Collection do Postman ou Insomnia
- * API hospedada em uma cloud pública (AWS, GCP, Digital Ocean, Azure, Contabo, e semelhantes)
- * Disponibilizar configuração em ambiente utilizando docker-compose.
- * Ser aderente a [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
- 
-#### Observações: 
- * Dúvidas a respeito do teste podem ser sanadas via e-mail, com o solicitante do mesmo;
- * Plágio parcial ou total acarreta na desclassificação imediata do candidato;
- * Por favor, não faça um fork deste repositório e não publique sua solução online! 
