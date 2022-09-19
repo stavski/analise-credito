@@ -1,5 +1,5 @@
 #### Problemática: 
-A empresa x realiza a intermediação de contratos de aluguel entre inquilinos e imobiliárias. Uma das funcionalidades que o sistema do x utiliza para isto é a análise de crédito, que analisa informações financeiras do cliente para tomar a decisão de aprovação do contrato de locação. Você, como desenvolvedor da companhia deverá construir a nova versão deste motor de crédito.
+A empresa x realiza a intermediação de contratos de aluguel entre inquilinos e imobiliárias. Uma das funcionalidades que o sistema do x utiliza para isto é a análise de crédito, que analisa informações financeiras do cliente para tomar a decisão de aprovação do contrato de locação.
 
 #### Escopo: 
 Deverão ser desenvolvidos no mínimo dois endpoints.
